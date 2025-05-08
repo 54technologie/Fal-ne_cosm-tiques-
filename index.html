@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Falène Cosmétiques</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Falène Cosmétiques (FC)</h1>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#boutique">Boutique</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#panier">Panier (<span id="nb-items">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="accueil">
+    <h2>Bienvenue chez Falène Cosmétiques</h2>
+    <p>Des produits naturels et écoresponsables pour prendre soin de vous.</p>
+  </section>
+
+  <section id="boutique">
+    <h2>Nos Produits</h2>
+    <div class="produits">
+      <div class="produit">
+        <h3>Savon Lavande</h3>
+        <p>5€</p>
+        <button onclick="ajouterAuPanier('Savon Lavande', 5)">Ajouter au panier</button>
+      </div>
+      <div class="produit">
+        <h3>Brosse à dents en bambou</h3>
+        <p>3€</p>
+        <button onclick="ajouterAuPanier('Brosse à dents', 3)">Ajouter au panier</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="panier">
+    <h2>Votre Panier</h2>
+    <ul id="liste-panier"></ul>
+    <p>Total : <span id="total">0</span>€</p>
+    <button onclick="viderPanier()">Vider le panier</button>
+  </section>
+
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p>Falène Cosmétiques est une marque engagée dans le respect de l’environnement et de votre peau.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Nom" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Falène Cosmétiques. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
